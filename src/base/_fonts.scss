@@ -24,7 +24,18 @@ body {
 }
 
 p {
+  font-size: colors_bg.$lg;
+  font-family: Inter_light;
+  color: colors_bg.$dark-blue;
 }
 
 span {
+  font-family: Inter_bold;
+  color: colors_bg.$dark-blue;
+}
+
+cite {
+  font-size: colors_bg.$md;
+  font-style: normal;
+  color: colors_bg.$grayish-blue;
 }
