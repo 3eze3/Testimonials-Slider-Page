@@ -1,0 +1,30 @@
+@use "../abtract/variable" as colors_bg;
+@font-face {
+  font-family: Inter_light;
+  src: url("../assets/fonts/Inter-Light.ttf");
+}
+@font-face {
+  font-family: Inter_medium;
+  src: url("../assets/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: Inter_bold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+
+body {
+  min-height: 100vh;
+  font-size: 32px;
+  font-family: Inter_light;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+}
+
+span {
+}
