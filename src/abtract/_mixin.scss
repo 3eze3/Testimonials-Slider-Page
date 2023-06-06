@@ -1,4 +1,4 @@
-@mixin flex($aling: center, $jutify: center, $direction: column, $gap: 2rem) {
+@mixin flex($aling: center, $jutify: center, $direction: column, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   align-items: $aling;
@@ -6,7 +6,7 @@
   gap: $gap;
 }
 @mixin media-break($media: max-width, $break: 480px) {
-  @media screen and($media:$break) {
+  @media screen and ($media: $break) {
     @content;
   }
 }
