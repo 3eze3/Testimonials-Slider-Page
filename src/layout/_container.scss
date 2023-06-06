@@ -1,0 +1,44 @@
+@use "../abtract/mixin" as layout;
+.container {
+  width: 200%;
+  min-height: 100vh;
+  @include layout.flex($direction: row);
+  transition: transform 0.2s ease-in;
+  transform: translateX(0%);
+  &__card {
+    width: calc(100% / 2);
+    @include layout.flex($direction: row);
+    position: relative;
+  }
+  &__testimonial {
+    width: 50%;
+    height: 100%;
+    padding-right: 7rem;
+    position: relative;
+    &::before {
+      content: url("../../dist/assets/images/pattern-quotes.svg");
+      position: absolute;
+      top: -5rem;
+      left: 6rem;
+    }
+  }
+
+  &__imageAuthor {
+    width: 35%;
+    position: relative;
+  }
+  &__image {
+    max-width: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 0.65rem;
+  }
+  &__decoration {
+    width: 45rem;
+    object-fit: scale-down;
+    position: absolute;
+    top: -4rem;
+    left: -6rem;
+    z-index: -1;
+  }
+}
