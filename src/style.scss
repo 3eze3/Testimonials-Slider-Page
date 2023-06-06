@@ -1,5 +1,9 @@
 // ------------- Base of the project -------------
 @use "base/reset_tags";
 @use "base/fonts";
+// ------------- Components -------------
+@use "components/hidden";
+@use "components/wraperButtons";
 // ------------- Layout main -------------
 @use "layout/main";
+@use "layout/container";
