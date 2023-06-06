@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   font-size: 32px;
   font-family: Inter_light;
-  hyphens: auto;
+  hyphens: manual;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,6 +27,8 @@ p {
   font-size: colors_bg.$lg;
   font-family: Inter_light;
   color: colors_bg.$dark-blue;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 span {
