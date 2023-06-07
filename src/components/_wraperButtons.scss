@@ -5,7 +5,7 @@
   padding: 1rem 1.5rem;
   @include layout.flex($justify: space-between, $direction: row);
   position: absolute;
-  top: -40rem;
+  top: 40rem;
   left: 60rem;
   border-radius: 5rem;
   background-color: #fff;
@@ -18,7 +18,7 @@
     left: calc(50% - 4rem);
   }
 
-  &__button {
+  &__icon {
     width: 0.8rem;
     cursor: pointer;
   }
