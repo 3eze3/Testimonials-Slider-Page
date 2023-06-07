@@ -97,6 +97,10 @@ cite {
   }
 }
 
+button {
+  background-color: transparent;
+}
+
 .hidden {
   width: 1px;
   height: 1px;
@@ -114,7 +118,7 @@ cite {
   justify-content: space-between;
   gap: 0;
   position: absolute;
-  top: -40rem;
+  top: 40rem;
   left: 60rem;
   border-radius: 5rem;
   background-color: #fff;
@@ -129,7 +133,7 @@ cite {
     left: calc(50% - 4rem);
   }
 }
-.wrapperButtons__button {
+.wrapperButtons__icon {
   width: 0.8rem;
   cursor: pointer;
 }
@@ -160,7 +164,9 @@ cite {
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    padding: 3rem 0.5rem;
+    padding-block: 3rem;
+    padding-right: 3.1rem;
+    padding-left: 1rem;
   }
 }
 .container__card {
