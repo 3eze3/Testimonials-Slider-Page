@@ -1,4 +1,5 @@
 @use "../abtract/variable" as colors_bg;
+@use "../abtract/mixin" as layout;
 @font-face {
   font-family: Inter_light;
   src: url("../assets/fonts/Inter-Light.ttf");
@@ -29,14 +30,27 @@ p {
   color: colors_bg.$dark-blue;
   line-height: 1.4;
   margin-bottom: 1rem;
+  @include layout.media-break() {
+    font-size: 0.55em;
+    text-align: center;
+  }
 }
 
 span {
   font-family: Inter_bold;
   color: colors_bg.$dark-blue;
+  @include layout.media-break() {
+    display: block;
+    margin-top: 0.5rem;
+  }
 }
 
 cite {
+  @include layout.media-break() {
+    display: block;
+    text-align: center;
+    font-size: 0.5em;
+  }
   font-size: colors_bg.$md;
   font-style: normal;
   color: colors_bg.$grayish-blue;
