@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+@font-face {
+  font-family: Inter_light;
+  src: url("../assets/fonts/Inter-Light.ttf");
+}
+@font-face {
+  font-family: Inter_medium;
+  src: url("../assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: Inter_bold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+body {
+  min-height: 100vh;
+  font-size: 32px;
+  font-family: Inter_light;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 0.9em;
+  font-family: Inter_light;
+  color: hsl(240deg, 38%, 20%);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 0.55em;
+    text-align: center;
+  }
+}
+
+span {
+  font-family: Inter_bold;
+  color: hsl(240deg, 38%, 20%);
+}
+@media screen and (max-width: 480px) {
+  span {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
+cite {
+  font-size: 0.66em;
+  font-style: normal;
+  color: hsl(240deg, 18%, 77%);
+}
+@media screen and (max-width: 480px) {
+  cite {
+    display: block;
+    text-align: center;
+    font-size: 0.5em;
+  }
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.wrapperButtons {
+  width: 8rem;
+  height: 3.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  position: absolute;
+  top: -40rem;
+  left: 60rem;
+  border-radius: 5rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2666666667);
+}
+@media screen and (max-width: 480px) {
+  .wrapperButtons {
+    width: 6rem;
+    height: 2.5rem;
+    padding: 1rem 0.75rem;
+    top: 22.8rem;
+    left: calc(50% - 4rem);
+  }
+}
+.wrapperButtons__button {
+  width: 0.8rem;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  min-height: 100dvh;
+  background: url("../assets/images/pattern-curve.svg") bottom left no-repeat;
+  overflow: hidden;
+}
+
+.container {
+  width: 200%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  transition: transform 0.2s ease-in;
+  transform: translateX(0%);
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 220%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 3rem 0.5rem;
+  }
+}
+.container__card {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+@media screen and (max-width: 480px) {
+  .container__card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 2rem;
+  }
+}
+.container__testimonial {
+  width: 50%;
+  padding-right: 7rem;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .container__testimonial {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 5rem;
+  }
+}
+.container__testimonial::before {
+  content: url("../../dist/assets/images/pattern-quotes.svg");
+  position: absolute;
+  top: -5rem;
+  left: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .container__testimonial::before {
+    top: -2rem;
+    left: 7rem;
+  }
+}
+.container__imageAuthor {
+  width: 35%;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .container__imageAuthor {
+    width: 85%;
+  }
+}
+.container__image {
+  max-width: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  border-radius: 0.65rem;
+}
+.container__decoration {
+  width: 45rem;
+  object-fit: scale-down;
+  position: absolute;
+  top: -4rem;
+  left: -6rem;
+  z-index: -1;
+}
+@media screen and (max-width: 480px) {
+  .container__decoration {
+    width: 25rem;
+    top: -2.5rem;
+    left: -4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
