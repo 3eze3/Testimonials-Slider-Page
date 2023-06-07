@@ -1,8 +1,8 @@
-@mixin flex($aling: center, $jutify: center, $direction: column, $gap: 0) {
+@mixin flex($aling: center, $justify: center, $direction: column, $gap: 0) {
   display: flex;
   flex-direction: $direction;
   align-items: $aling;
-  justify-content: $jutify;
+  justify-content: $justify;
   gap: $gap;
 }
 @mixin media-break($media: max-width, $break: 480px) {
