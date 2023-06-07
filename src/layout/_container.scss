@@ -8,7 +8,9 @@
   @include layout.media-break() {
     width: 220%;
     @include layout.flex($justify: space-between, $direction: row, $gap: 4rem);
-    padding: 3rem 0.5rem;
+    padding-block: 3rem;
+    padding-right: 3.1rem;
+    padding-left: 1rem;
   }
   &__card {
     width: calc(100% / 2);
