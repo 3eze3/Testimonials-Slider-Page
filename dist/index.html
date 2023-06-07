@@ -9,7 +9,7 @@
       sizes="32x32"
       href="dist/assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="slider.js" defer></script>
+    <script src="app/slider.js" defer></script>
     <title>Coding Bootcamp Testimonials Slider</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
             <img
               class="container__image"
               src="assets/images/image-tanya.jpg"
-              alt="Name desing " />
+              alt="Tanya Sinclair UX Developer" />
             <img
               class="container__decoration"
               src="assets/images/pattern-bg.svg"
@@ -43,19 +43,21 @@
         <div class="container__card">
           <blockquote class="container__testimonial">
             <p class="container__description">
-              “ I’ve been interested in coding for a while but never taken the
-              jump, until now. I couldn’t recommend this course enough. I’m now
-              in the job of my dreams and so excited about the future. ”
+              “ If you want to lay the best foundation possible I'd recommend
+              taking this course. The depth the instructors go into is
+              incredible. I now feel so confident about starting up as a
+              professional developer. ”
             </p>
             <cite class="container__author">
-              <span class="container__name">Tanya Sinclair</span> UX Engineer
+              <span class="container__name">Jhon Tarkpor</span> Junior Front-end
+              Developer
             </cite>
           </blockquote>
           <div class="container__imageAuthor">
             <img
               class="container__image"
               src="assets/images/image-john.jpg"
-              alt="Name desing " />
+              alt="Jhon Tarkpor Front-end developer" />
             <img
               class="container__decoration"
               src="assets/images/pattern-bg.svg"
@@ -65,14 +67,22 @@
         </div>
       </section>
       <div class="container__wrapper wrapperButtons">
-        <img
+        <button
           class="wrapperButtons__button"
-          src="assets/images/icon-prev.svg"
-          alt="button__preview" />
-        <img
+          aria-label="Button next testimonial">
+          <img
+            class="wrapperButtons__icon"
+            src="assets/images/icon-prev.svg"
+            alt="button__preview" />
+        </button>
+        <button
           class="wrapperButtons__button"
-          src="assets/images/icon-next.svg"
-          alt="button__next" />
+          aria-label="Button next testimonial">
+          <img
+            class="wrapperButtons__icon"
+            src="assets/images/icon-next.svg"
+            alt="button__next" />
+        </button>
       </div>
     </main>
   </body>
